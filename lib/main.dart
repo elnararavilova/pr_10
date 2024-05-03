@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'first.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 void main() {
   runApp(MyApp());
@@ -84,6 +85,12 @@ class Screen1 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Screen 1'),
+          CachedNetworkImage(
+            imageUrl: "https://i.postimg.cc/633s8pHw/th-1.jpg",
+            progressIndicatorBuilder: (context, url, progress) =>
+            const CircularProgressIndicator(),
+            errorWidget: (context, url, error) => Icon(Icons.error),
+          ),
           ElevatedButton(
             onPressed: () {
               Navigator.pop(context);
@@ -104,6 +111,12 @@ class Screen2 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Screen 2'),
+          CachedNetworkImage(
+            imageUrl: "https://i.postimg.cc/mgNhwP8s/1547367999-1.jpg",
+            progressIndicatorBuilder: (context, url, progress) =>
+            const CircularProgressIndicator(),
+            errorWidget: (context, url, error) => Icon(Icons.error),
+          ),
           ElevatedButton(
             onPressed: () {
               Navigator.pop(context);
@@ -124,6 +137,12 @@ class Screen3 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Screen 3'),
+          CachedNetworkImage(
+            imageUrl: "https://i.postimg.cc/N0sFPQzr/3d-kartinki-na-rabochij-stol-na-ves-ekran-3.jpg",
+            progressIndicatorBuilder: (context, url, progress) =>
+            const CircularProgressIndicator(),
+            errorWidget: (context, url, error) => Icon(Icons.error),
+          ),
           ElevatedButton(
             onPressed: () {
               Navigator.pop(context);
@@ -144,6 +163,12 @@ class Screen4 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Screen 4'),
+          CachedNetworkImage(
+            imageUrl: "https://i.postimg.cc/zB3B805z/651499770.jpg",
+            progressIndicatorBuilder: (context, url, progress) =>
+            const CircularProgressIndicator(),
+            errorWidget: (context, url, error) => Icon(Icons.error),
+          ),
           ElevatedButton(
             onPressed: () {
               Navigator.pop(context);
@@ -164,6 +189,12 @@ class Screen5 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Screen 5'),
+          CachedNetworkImage(
+            imageUrl: "https://i.postimg.cc/YCwhY6NR/th.jpg",
+            progressIndicatorBuilder: (context, url, progress) =>
+            const CircularProgressIndicator(),
+            errorWidget: (context, url, error) => Icon(Icons.error),
+          ),
           ElevatedButton(
             onPressed: () {
               Navigator.pop(context);
